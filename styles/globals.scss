@@ -92,6 +92,12 @@ a {
           transition: all 0.4s ease-in-out 0s, visibility 0s linear 0.4s, z-index 0s linear 0.01s;
           visibility: hidden;
           opacity: 0;
+          background: hsla(270, 2%, 21%, 1);
+          background: linear-gradient(90deg, hsla(270, 2%, 21%, 1) 15%, hsla(182, 69%, 35%, 1) 100%);
+          background: -moz-linear-gradient(90deg, hsla(270, 2%, 21%, 1) 15%, hsla(182, 69%, 35%, 1) 100%);
+          background: -webkit-linear-gradient(90deg, hsla(270, 2%, 21%, 1) 15%, hsla(182, 69%, 35%, 1) 100%);
+
+
 
           &.activeNav {
             visibility: visible;
@@ -1759,7 +1765,11 @@ a {
       .code-p {
         position: absolute;
         bottom: 8vh;
-        left: 20%;
+        left: 49%;
+        
+        .ls-15 {
+          padding-left: 0px;
+        }
       }
       .design-list {
         line-height: 50px;
