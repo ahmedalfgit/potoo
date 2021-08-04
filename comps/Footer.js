@@ -13,12 +13,13 @@ export default function Footer() {
   
     const handleSubmit = (e) => {
         e.preventDefault()
+        console.log('sending');
 
         let data = {
             name,
-            email,
-            message,
             phone,
+            email,
+            message
         }
 
         fetch('/api/contact-handle', {
@@ -90,23 +91,22 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-4 col-md-4 col-12">
                     <form className="contact-form">
-                        <formGroup className="inputGroup">
+                        <div className="inputGroup">
                             <input type="text" name="name" className="contact-form-input name" 
                             onChange={(e)=>{setName(e.target.value)}} placeholder="Your name"/>
-                        </formGroup>
-                        <formGroup className="inputGroup">
+                        </div>
+                        <div className="inputGroup">
                             <input type="tel" name="phone" className="contact-form-input phone"
                             onChange={(e)=>{setPhone(e.target.value)}} placeholder="Your number"/>
-                        </formGroup>
-                        <formGroup className="inputGroup">
+                        </div>
+                        <div className="inputGroup">
                             <input type="text" name="email" className="contact-form-input email"
                             onChange={(e)=>{setEmail(e.target.value)}} required placeholder="Email"/>
-                        </formGroup>
-                        <formGroup className="inputGroup">
+                        </div>
+                        <div className="inputGroup">
                             <textarea rows="4" cols="50" type="text" placeholder="Tell me about your idea" name="message" className="contact-form-input message"
                             onChange={(e)=>{setMessage(e.target.value)}}/>
-                        </formGroup>
-
+                        </div>
                         <input type="submit" value="Send" className="submit-btn" onClick={(e)=>{handleSubmit(e)}}/>
                     </form>
                 </div>

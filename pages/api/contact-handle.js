@@ -1,8 +1,8 @@
+import { EnvironmentPlugin } from 'webpack'
 
-require('dotenv').config()
 
 export default function (req, res) {
-    
+  require('dotenv').config()
     
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
@@ -10,13 +10,13 @@ export default function (req, res) {
         host: 'smtp.gmail.com',
         auth: {
             user: 'bscenclosurescontact@gmail.com',
-            pass: process.env.PASSWORD
+            pass: process.env.password,
         },
         secure: false,
         tls: {
           rejectUnauthorized:false
         }
-    });
+    })
 
     const mailData = {
         from: 'sender@bscenclosures.com',
@@ -32,9 +32,11 @@ export default function (req, res) {
 
       transporter.sendMail(mailData, function (err, info) {
         if(err)
-          console.log(err)
+          console.log(`there is an error sending the form` + err)
         else
           console.log(info)
       })
+
+      console.log(req.body)
       res.status(200)
-}
+} 
