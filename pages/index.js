@@ -292,7 +292,7 @@ export default function Home() {
            <p className="service-p">
               We have Nextjs, React, and 
               Wordpress under our sleeves
-              to make perfect pixel websites
+              to make perfect pixel applications
            </p>
          </div>
        </div>
