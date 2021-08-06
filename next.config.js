@@ -1,4 +1,4 @@
-moudle.exports = {
+module.exports = {
     async rewrites( ) {
         return [ {
             source: '/api/contact-handle',
