@@ -6,13 +6,14 @@ export default function (req, res) {
     
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
-        port: 587,
+        port: 465,
         host: 'smtp.gmail.com',
+        service: 'Gmail',
         auth: {
             user: 'bscenclosurescontact@gmail.com',
             pass: process.env.password,
         },
-        secure: false,
+        secure: true,
         tls: {
           rejectUnauthorized:false
         }
