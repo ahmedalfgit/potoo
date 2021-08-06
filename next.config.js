@@ -1,7 +1,7 @@
 module.exports = {
     async rewrites( ) {
         return [ {
-            source: '/api/path*',
+            source: '/:path*',
             destination: 'https://potoo-flax.vercel.app/:path*',
         },
         ]
