@@ -153,16 +153,6 @@ module.exports = require("react-rellax");;
 "use strict";
 module.exports = require("react/jsx-dev-runtime");;
 
-/***/ }),
-
-/***/ "?ca47":
-/*!******************************************!*\
-  !*** ./utils/resolve-rewrites (ignored) ***!
-  \******************************************/
-/***/ (function() {
-
-/* (ignored) */
-
 /***/ })
 
 };

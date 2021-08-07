@@ -56,7 +56,7 @@ function Design() {
             </div>
         </div>
     </div>
-        <div className="container-fluid design-page-container pt-md-5 mt-md-5">        
+        <div className="container-fluid design-page-container pr-md-0 pt-md-5 mt-md-5">        
         <div className="row justify-content-start pt-lg-5">
             <div className="col-lg-4 col-md-10 col-11 pl-lg-5 pl-0">
                 <Image
