@@ -156,7 +156,7 @@ export default function Home() {
               </Parallax>
             </div>
             <div className="col-md-3 col-6 pt-md-5 mt-md-5 bird-col">
-            <Parallax speed={13}> 
+            <Parallax speed={3}> 
               <Image
                 src="/potoo-bird.png"
                 height= "730px"
@@ -167,8 +167,37 @@ export default function Home() {
           </div>
         </div>
      </div>
-     <div className="container-fluid service-container mw-1450">
-       <div className="row justify-content-start">
+        <div className="row justify-content-md-end justify-content-mobile-center mw-1190">
+          <div className="col-md-11 col-12">
+            <Image
+            src="/wow.jpg"
+            height="445px"
+            width="1129px"
+            alt="wow"
+            />
+          </div>
+        </div>
+        <div className="row justify-content-end mw-1190">
+            <div className="col-md-7 col-9 mr-md-5 pr-md-5">
+                <h1 className="impression-h1 text-right-mobile">
+                  impression
+                </h1>
+            </div>
+        </div>
+        <div className="row justify-content-center pt-md-5 mt-md-5 pt-3 mb-5">
+          <div className="col-md-8 col-12">
+            <h2 className="impression-is-h2">
+              is diverse and decidedly different
+            </h2>
+          </div>
+        </div>
+     <div className="container-fluid service-container mw-1450 pt-md-5 mt-md-5">
+       <div className="row justify-content-start pt-md-5">
+         <div className="col-md-6 col-11 mb-md-4 mt-md-5 pl-md-5 ml-md-8r"> 
+           <h2 className="create-impression-h2">
+             I create impression by
+           </h2>
+         </div>
           <div className="col-md-7 col-10">
             <ul className="service-list list">
               <motion.div
@@ -252,13 +281,18 @@ export default function Home() {
      </div>
      <div className="container-fluid service-container-mobile">
        <div className="row justify-content-start">
+       <div className="col-md-6 col-12 mb-4 mt-5 pt-5"> 
+           <h2 className="create-impression-h2">
+             I create impression by
+           </h2>
+         </div>
          <div className="col-11 service-1-col">
            <h1 className="service-h1">
               Branding
            </h1>
            <p className="service-p">
-              We look at branding 
-              as a puzzle. We put the 
+              Look at branding 
+              as a puzzle. I put the 
               pieces together to make 
               the big picture of your 
               brand “it’s fun!”
@@ -269,8 +303,8 @@ export default function Home() {
               Web design
            </h1>
            <p className="service-p">
-              We spend most of 
-              our days in Illustrator 
+              I spend most of 
+              my time in Illustrator 
               making cool, bold designs
            </p>
          </div>
@@ -279,7 +313,7 @@ export default function Home() {
               Graphic design
            </h1>
            <p className="service-p">
-              We think of web design
+              Think of web design
               as writing a inspirational 
               story on a board on the 
               web
@@ -290,7 +324,7 @@ export default function Home() {
               Web development
            </h1>
            <p className="service-p">
-              We have Nextjs, React, and 
+              I have Nextjs, React, and 
               Wordpress under our sleeves
               to make perfect pixel applications
            </p>
@@ -298,24 +332,10 @@ export default function Home() {
        </div>
      </div>
      <div className="container-fluid code-container mw-1450">
-       <div className="row justify-content-end">
-         <div className="col-md-5 col-11 mr-md-5">
-           <Parallax speed={0}>
-            <p className="poo-text">
-                Usual is dull. To break the 
-                usual, design ought to 
-                be <span className="text-red"> unanticipated</span> and 
-                <span className="text-red"> engaging</span>
-            </p>
-           </Parallax>
-         </div>
-       </div>
          <div className="row justify-content-start">
           <div className="col-md-6 col-11 pt-md-5 mt-md-5 potoo-vision-col ml-md-5">
             <p className="potoo-vision-text">
-              Potoo enjoys presenting 
-              extraordinary ideas 
-              on the web
+              Nesting impression on the web
             </p>
           </div>
          </div>

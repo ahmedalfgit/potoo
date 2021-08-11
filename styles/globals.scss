@@ -303,9 +303,6 @@ a {
           }
         }
       }
-      .service-container {
-        display: none;
-      }
       .service-container-mobile {
         padding: 0;
         .col-11 {
@@ -359,22 +356,6 @@ a {
           }
         }
       }
-    }
-    .code-container {
-      margin-top: 0rem;
-      padding-top: 2rem;
-      padding-bottom: 0rem;
-
-      .col-11 {
-        margin-right: 0;
-        padding-right: 0;
-
-        .poo-text {
-          font-size: 35px;
-          line-height: 50px;
-        }
-      }
-  
     }
     .footer-container {
       padding-top: 7rem;
@@ -516,13 +497,9 @@ a {
     padding-top: 7rem;
     padding-bottom: 7rem;
 
-    .poo-text {
-      font-size: 35px;
-      line-height: 50px
-    }
     .potoo-vision-col {
       position: relative;
-      margin-top: 12rem!important;
+      margin-top: 7rem!important;
       margin-bottom: 2rem;
 
       .potoo-vision-text {
@@ -530,7 +507,7 @@ a {
         line-height: 55px;
         color: #fff;
         z-index: 199;
-        padding: 5rem 2rem 2rem 2rem;
+        padding: 7rem 2rem 2rem 2rem;
         margin-top: 6.278rem;
 
         &::before {
@@ -653,6 +630,22 @@ a {
       padding: 2rem;
       margin-top: 8rem;
     }
+  }
+  .text-right-mobile {
+    text-align: right!important;
+  }
+  .service-container {
+    display: none;
+  }
+  .mw-1190 {
+    .impression-h1 {
+      text-align: right;
+      font-size: 3rem;
+    }
+  }
+  .impression-is-h2 {
+    font-size: 1.45rem;
+    font-weight: 200;
   }
 }
 
@@ -1575,7 +1568,7 @@ a {
           line-height: 70px;
           color: #fff;
           z-index: 199;
-          padding: 5rem 2rem 3rem 5rem;
+          padding: 8rem 2rem 3rem 5rem;
           margin-top: 0;
   
           &::before {
@@ -1669,6 +1662,11 @@ a {
       padding-top: 4rem;
       padding-bottom: 5rem;
       display: inline-block;
+
+      .create-impression-h2 {
+        font-size: 3.4rem;
+        font-weight: 301;
+      }
   
       .service-list {
         // list-style: url('../public/item-icon.svg');
@@ -1778,6 +1776,24 @@ a {
       .bg-yellow {
         margin-top: 6rem!important;
       }
+    }
+    .mw-1190 {
+      max-width: 1190px;
+
+      .impression-h1 {
+        text-align: right;
+        font-size: 6rem;
+      }
+    }
+    .impression-is-h2 {
+      font-size: 3rem;
+      font-weight: 200;
+    }
+    .service-container {
+      display: block;
+    }
+    .ml-md-8r {
+      margin-left: 8rem;
     }
   }
   
