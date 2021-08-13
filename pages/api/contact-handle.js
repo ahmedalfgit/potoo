@@ -1,4 +1,3 @@
-import { EnvironmentPlugin } from 'webpack'
 
 
 export default function (req, res) {

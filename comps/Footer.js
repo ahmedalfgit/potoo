@@ -1,45 +1,36 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
 import Link from 'next/link'
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import {useRouter} from 'next/router'
 
 
 export default function Footer() {
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-    const [phone, setPhone] = useState('')
-    const [submitted, setSubmitted] = useState(false)
-  
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log('sending');
+    const {register, handleSubmit, formState: {errors}, reset} = useForm();
 
-        let data = {
-            name,
-            phone,
-            email,
-            message
-        }
+    const router = useRouter()
 
-        fetch('/api/contact-handle', {
-            method: 'POST',
+    async function onSubmitForm(values) {
+        let config = {
+            method: 'post',
+            url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
             headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
-        }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-              console.log('Response succeeded!')
-              setSubmitted(true)
-              setName('')
-              setPhone('')
-              setEmail('')
-              setMessage('')
+            data: values,
+        };
+
+        try {
+            const response = await axios(config);
+            if(response.status == 200) {
+                reset()
+                router.push("/")
             }
-          })
+        } catch (err) {
+            console.error(err);
+        }
     }
     
       return (
@@ -90,24 +81,46 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12">
-                    <form className="contact-form">
+                    <form className="contact-form" onSubmit={handleSubmit(onSubmitForm)}>
                         <div className="inputGroup">
                             <input type="text" name="name" className="contact-form-input name" 
-                            onChange={(e)=>{setName(e.target.value)}} placeholder="Your name"/>
+                             placeholder="Your name" {...register('name', {
+                                 required: true, 
+                             })}
+                             />
+                             {errors.name && errors.name.type === "required" && <span className="form-error-span">Opps you forgot your name</span>}
                         </div>
                         <div className="inputGroup">
                             <input type="tel" name="phone" className="contact-form-input phone"
-                            onChange={(e)=>{setPhone(e.target.value)}} placeholder="Your number"/>
+                             placeholder="Your number" 
+                             {...register("phone", {
+                                 required: true,
+                             })}
+                             />
+                             {errors.phone && errors.phone.type === "required" && <span className="form-error-span">Forgot to enter your digits</span>}
                         </div>
                         <div className="inputGroup">
                             <input type="text" name="email" className="contact-form-input email"
-                            onChange={(e)=>{setEmail(e.target.value)}} required placeholder="Email"/>
+                              placeholder="Email" 
+                             {...register("email", {
+                                 required: true,
+                                 pattern: {
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    message: "Entered value does not match email format"
+                                }
+                             })}
+                             />
+                             {errors.email && errors.email.type === "required" && <span className="form-error-span">Your email is needed</span>}
+                             {errors.email && <span className="form-error-span" role="alert">{errors.email.message}</span>}
                         </div>
                         <div className="inputGroup">
                             <textarea rows="4" cols="50" type="text" placeholder="Tell me about your idea" name="message" className="contact-form-input message"
-                            onChange={(e)=>{setMessage(e.target.value)}}/>
+                           {...register("message", {
+                               required: true,
+                           })}/>
+                               {errors.message && errors.message.type === "required" && <span className="form-error-span">What is your idea?</span>}
                         </div>
-                        <input type="submit" value="Send" className="submit-btn" onClick={(e)=>{handleSubmit(e)}}/>
+                        <input type="submit" value="Send" className="submit-btn"/>
                     </form>
                 </div>
             </div>
