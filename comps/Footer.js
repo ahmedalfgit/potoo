@@ -15,7 +15,7 @@ export default function Footer() {
     async function onSubmitForm(values) {
         let config = {
             method: 'post',
-            url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+            url: `${process.env.NEXT_PUBLIC_API_URL}api/contact`,
             headers: {
                 'Content-Type': 'application/json',
             },
