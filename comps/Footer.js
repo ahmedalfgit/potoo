@@ -15,7 +15,7 @@ export default function Footer() {
     async function onSubmitForm(values) {
         let config = {
             method: 'post',
-            url: "/api/contact",
+            url: "https://potoo-flax.vercel.app/api/contact",
             headers: {
                 'Content-Type': 'application/json',
             },
