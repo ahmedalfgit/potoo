@@ -14,6 +14,7 @@ export default function Home() {
   const [isShownPointThree, setPointThreeShown] = useState(false);
   const [isShownPointFour, setPointFourShown] = useState(false);
 
+
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -131,7 +132,7 @@ export default function Home() {
                 <Parallax speed={2} > 
                   <p className="design-p text-left pl-md-2">
                   Potoo is a visionary bird flying
-                  over marvelous ideas and 
+                  over marvelous <span className="red-text">ideas</span> and 
                   <span className="red-text"> innovations</span> and host them on the 
                   nest on the web 
                   </p>
@@ -246,8 +247,8 @@ export default function Home() {
             <ul className="list service-list-content">
               {isShownPointOne && (
               <li className="item service-list-content-item">
-                We look at branding 
-                as a puzzle. We put the 
+                Looking at branding 
+                as a puzzle. I put the 
                 pieces together to make 
                 the big picture of your 
                 brand “it’s fun!”
@@ -255,14 +256,14 @@ export default function Home() {
               )}
               {isShownPointTwo && (
               <li className="item service-list-content-item">
-                We spend most of 
-                our days in Illustrator 
+                I spend most of 
+                my time in Illustrator 
                 making cool, bold designs
               </li>
               )}
               {isShownPointThree && (
               <li className="item service-list-content-item">
-                We think of web design
+                Think of web design
                 as writing a inspirational 
                 story on a board on the 
                 web
@@ -270,7 +271,7 @@ export default function Home() {
               )}
               {isShownPointFour && (
               <li className="item service-list-content-item">
-                We have Nextjs, React, and 
+                I have Nextjs, React, and 
                 Wordpress under our sleeves
                 to make perfect pixel websites
               </li>

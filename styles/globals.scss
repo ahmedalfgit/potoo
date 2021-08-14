@@ -159,9 +159,9 @@ a {
               text-transform: uppercase;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              background-image: -webkit-linear-gradient(45deg, #4ccbfb,#c4b4dba6,  #C6A1FF);
-              background-image: -moz-linear-gradient(45deg, #4ccbfb, #c4b4dba6, #C6A1FF);
-              background-image: linear-gradient(45deg, #4ccbfb, #c4b4dba6,  #C6A1FF);
+              background-image: -webkit-linear-gradient(45deg, #fff, #c59fffa6, #FFF);
+              background-image: -moz-linear-gradient(45deg, #fff, #c59fffa6, #FFF);
+              background-image: linear-gradient(45deg, #fff, #c59fffa6, #FFF);
             }
           }
           .authenticity-li {
@@ -175,9 +175,9 @@ a {
               text-transform: uppercase;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              background-image: -webkit-linear-gradient(45deg, #668BFB, #CBF4CE, #FF6A6A);
-              background-image: -moz-linear-gradient(45deg, #668BFB, #CBF4CE, #FF6A6A);
-              background-image: linear-gradient(45deg, #668BFB, #CBF4CE,  #FF6A6A);
+              background-image: -webkit-linear-gradient(45deg, #FFF, #FDA1A1, #FFF);
+              background-image: -moz-linear-gradient(45deg, #FFF, #FDA1A1, #FFF);
+              background-image: linear-gradient(45deg, #FFF, #FDA1A1, #FFF);
             }
           }
           .Concept-li {
@@ -192,9 +192,9 @@ a {
               text-transform: uppercase;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              background-image: -webkit-linear-gradient(45deg, #F788EF, #FFF6C7, #FFF6C7);
-              background-image: -moz-linear-gradient(45deg, #F788EF, #FFF6C7, #FFF6C7);
-              background-image: linear-gradient(45deg, #F788EF, #FFF6C7, #FFF6C7);
+              background-image: -webkit-linear-gradient(45deg, #FFF, #FFEF9C, #FFF);
+              background-image: -moz-linear-gradient(45deg, #FFF, #FFEF9C, #FFF);
+              background-image: linear-gradient(45deg, #FFF, #FFEF9C, #FFF);
             }
           }
           .vision-li {
@@ -224,9 +224,9 @@ a {
               text-transform: uppercase;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              background-image: -webkit-linear-gradient(45deg, #FF94B7E6, #A5BCA7, #FFF6C7);
-              background-image: -moz-linear-gradient(45deg, #FF94B7E6, #A5BCA7, #FFF6C7);
-              background-image: linear-gradient(45deg, #FF94B7E6, #A5BCA7, #FFF6C7);
+              background-image: -webkit-linear-gradient(45deg, #FFFFFFE6, #7CFF88, #FFF);
+              background-image: -moz-linear-gradient(45deg, #FFFFFFE6, #7CFF88, #FFF);
+              background-image: linear-gradient(45deg, #FFFFFFE6, #7CFF88, #FFF);
             }
           }
           .transparency-li {
@@ -240,9 +240,9 @@ a {
               text-transform: uppercase;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              background-image: -webkit-linear-gradient(45deg, #796AFF, #A5BCA7, #FFF6C7);
-              background-image: -moz-linear-gradient(45deg, #796AFF, #A5BCA7, #FFF6C7);
-              background-image: linear-gradient(45deg, #796AFF, #A5BCA7, #FFF6C7);
+              background-image: -webkit-linear-gradient(45deg, #FFF, #FF5656, #FFF);
+              background-image: -moz-linear-gradient(45deg, #FFF, #FF5656, #FFF);
+              background-image: linear-gradient(45deg, #FFF, #FF5656, #FFF);
             }
           }
         }
@@ -312,7 +312,7 @@ a {
           .service-h1 {
             -webkit-background-clip: text;
              -webkit-text-fill-color: transparent;
-             background-image: linear-gradient(45deg, rgb(255, 251, 0), #f402c3);
+             background-color: #eef2ea;
           }
 
           .service-p {
@@ -367,37 +367,16 @@ a {
       }
   
       .say-hello-h1 {
-        font-size: 9rem;
+        font-size: 7.8rem;
         font-weight: 600;
 
-        &::before {
-          position: absolute;
-          content: '';
-          background: hsla(55, 100%, 47%, 1);
-          background: linear-gradient(70deg, hsla(209, 100%, 66%, 0.7) 0%, hsla(136, 99%, 60%, 0.7) 100%);
-          background: -moz-linear-gradient(70deg, hsla(209, 100%, 66%, 0.7) 0%, hsla(136, 99%, 60%, 0.7) 100%);
-          background: -webkit-linear-gradient(70deg, hsla(209, 100%, 66%, 0.7) 0%, hsla(136, 99%, 60%, 0.7) 100%);
-          width: 35%;
-          height: 32%;
-          right: 3%;
-          top: 5%;
-          border-radius: 100px;
-          z-index: -111;
+        .footer-impression {
+          font-size: 4.4rem;
+          font-weight: 700;
+          position: relative;
+          bottom: 3rem;
         }
-        &::after {
-          position: absolute;
-          content: '';
-          background: hsla(136, 99%, 60%, 1);
-          background: linear-gradient(360deg, hsla(136, 99%, 60%, 0.7) 0%, hsla(209, 100%, 66%, 0.7) 100%);
-          background: -moz-linear-gradient(360deg, hsla(136, 99%, 60%, 0.7) 0%, hsla(209, 100%, 66%, 0.7) 100%);
-          background: -webkit-linear-gradient(360deg, hsla(136, 99%, 60%, 0.7) 0%, hsla(209, 100%, 66%, 0.7) 100%);
-          width: 96%;
-          height: 38%;
-          left: 3%;
-          top: 43%;
-          border-radius: 100px;
-          z-index: -111;
-        }
+        
       }
       .say-hello-a {
         text-decoration: none;
@@ -889,6 +868,8 @@ a {
         text-align: center;
         letter-spacing: 22px;
         display: ruby;
+      
+
         
         p {
 
@@ -951,6 +932,11 @@ a {
     .say-hello-h1 {
       font-size: 10rem;
       font-weight: 500;
+
+      .footer-impression {
+        font-size: 10rem;
+        bottom: 0;
+      }
     }
     .say-hello-a {
       text-decoration: none;
@@ -1062,8 +1048,16 @@ a {
       .shows-h1 {
         font-size: 9.1rem;
         display: block;
-        font-weight: 100;
+        font-weight: 600;
         padding-top: 13rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(180deg, #FFF, #51fff5);
+        background-image: -moz-linear-gradient(180deg, #FFF, #51fff5);
+        background-image: -webkit-gradient(linear, left top, right top, from(#FFF), to(#51fff5));
+        background-image: -webkit-linear-gradient(180deg, #FFF, #51fff5);
+        background-image: -moz-linear-gradient(180deg, #FFF, #51fff5);
+        background-image: linear-gradient(180deg, #FFF, #51fff5);
 
       }
     }
@@ -1665,7 +1659,7 @@ a {
 
       .create-impression-h2 {
         font-size: 3.4rem;
-        font-weight: 301;
+        font-weight: 403;
       }
   
       .service-list {
@@ -1729,6 +1723,7 @@ a {
           
           p {
             cursor: default;
+            font-size: 1.7rem;
             .design-letters {
               font-size: 6.3rem;
             }
@@ -1787,7 +1782,7 @@ a {
     }
     .impression-is-h2 {
       font-size: 3rem;
-      font-weight: 200;
+      font-weight: 400;
     }
     .service-container {
       display: block;
